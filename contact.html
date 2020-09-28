@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo_irisus.png" alt="logo de l'agence irisus">
+    </div>
+    <nav></nav>
+  </header>
+  <main>
+    <h1>Contact</h1>
+    <div>
+      <section>
+        <form action="" method="POST" >
+          <div class="informations">
+            <div class="nom">
+              <label for="nom">Nom</label>
+              <input class="donnees" type="text" name="nom" id="nom" required />
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input class="donnees" type="email" name="email" id="email" required />
+            </div>
+          </div>
+          <div>
+            <label for="choix-sujet">Sujet</label>
+            <select class="donnees" name="sujets" id="choix-sujet">
+              <option value=""></option>
+              <option value="projet">Demande de projet</option>
+              <option value="candidature">Candidature</option>
+              <option value="question">Question(s)</option>
+              <option value="stage">Stage</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <input type="submit" value="ENVOYER" class="bouton"/>
+        </form>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <h3>06 58 33 29 65</h3>
+        <h3>irisus.agency@gmail.com</h3>
+        <h2>Agence Irisus</h2>
+        <h3>Avenue Michel Crépeau, 17000 La Rochelle</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1549.5330239561765!2d-1.1573710746658488!3d46.14785169886726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153b8d41a72ef%3A0x8111c75e84e3d266!2sP%C3%B4le%20Communication%20Multim%C3%A9dia%20Reseaux!5e0!3m2!1sfr!2sfr!4v1601038562044!5m2!1sfr!2sfr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

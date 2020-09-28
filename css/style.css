@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin';
+    letter-spacing: .2rem;
+}
+
+body {
+    background-color: #161616;
+    color: white;
+}
+
+h1, h2 {
+    text-transform: uppercase 
+}
+
+h1 {
+    margin: 2rem;
+}
+
+h2 {
+    color: #a0a0a0;
+}
+
+h3 {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/*************HEADER***************/
+.logo {
+    width: 10vw;
+}
+img {
+    width: 100%;
+}
+/*************MAIN************/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main div:first-of-type {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section {
+    width: 30%;
+    justify-content: space-between;
+}
+
+
+/********FORM*************/
+.informations {
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+.nom, .email {
+    width: 40%;
+}
+
+form > div, 
+.informations > div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input, textarea, select {
+    background-color: transparent;
+    color: white;
+}
+
+.donnees {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+textarea {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid white;
+}
+
+.bouton {
+    background-color: white;
+    border: none;
+    color: #161616;
+    width: 33%;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+iframe {
+    filter: grayscale(100%);
+}
