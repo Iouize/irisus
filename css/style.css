@@ -12,11 +12,12 @@ body {
 }
 
 h1, h2 {
-    text-transform: uppercase 
+    text-transform: uppercase; 
 }
 
 h1 {
     font-size: 3rem;
+    text-align: center;
 }
 
 h2 {
@@ -40,7 +41,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-between;
 }
 
@@ -49,14 +50,13 @@ main {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
-/*
+
 section {
-    width: 35%;
+    width: 40%;
 }
-*/
 
 .coordonnees{
     margin-bottom: 5%;
@@ -75,11 +75,11 @@ iframe {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 .informations > input {
-    width: 40%;
+    width: 45%;
 }
 
 form > div {
@@ -128,14 +128,37 @@ textarea {
 
 /*************************/
 /* Pour tous les écrans plus petits qu'une tablette (768px)*/
-/*
-@media (max-width: 768px) {
+
+@media (max-width: 767.98px) {
     section {
         width: 90%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .informations {
+        flex-direction: column;
     }
 
     .informations > input {
         width: 100%;
     }
+
+    .bouton {
+        width: 100%;
+    }
+
+    main, .contenu, .informations {
+        flex-wrap: wrap;
+    }
+
+    input, select, .message {
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .coordonnees > h3 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }
-*/
