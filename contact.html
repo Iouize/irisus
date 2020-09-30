@@ -23,16 +23,14 @@
             <input class="donnees" type="text" name="nom" id="nom" value="Nom" onfocus="if(this.value == 'Nom')this.value = '';" required />
             <input class="donnees" type="email" name="email" id="email" value="Email" onfocus="if(this.value == 'Email')this.value = '';" required />
           </div>
-          <div>
-            <select class="donnees" name="sujets" id="choix-sujet">
-              <option value="Sujet">Sujet</option>
-              <option value="projet">Demande de projet</option>
-              <option value="candidature">Candidature</option>
-              <option value="question">Question(s)</option>
-              <option value="stage">Stage</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
+          <select class="donnees" name="sujets" id="choix-sujet">
+            <option value="Sujet">Sujet</option>
+            <option value="projet">Demande de projet</option>
+            <option value="candidature">Candidature</option>
+            <option value="question">Question(s)</option>
+            <option value="stage">Stage</option>
+            <option value="autre">Autre</option>
+          </select>
           <div class="message">
             <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
