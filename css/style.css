@@ -67,7 +67,8 @@ section {
 }
 
 iframe {
-    filter: grayscale(100%);
+    /*filter: grayscale(1) invert(1);*/
+    filter: grayscale(1);
 }
 
 /********FORM*************/
@@ -102,6 +103,7 @@ input, textarea, select {
 
 .donnees {
     border: none;
+    border-radius: 0; 
     border-bottom: 1px solid white;
 }
 
@@ -124,6 +126,13 @@ textarea {
     height: 3rem;
     font-weight: bold;
     font-size: 1rem;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/angle-down-solid.svg) no-repeat right;
 }
 
 /*************************/
