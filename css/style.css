@@ -36,6 +36,9 @@ h3 {
 img {
     width: 100%;
 }
+
+/********************************/
+/*       PAGE D'ACCUEIL         */
 /*************MAIN************/
 main {
     display: flex;
@@ -170,4 +173,32 @@ select {
         margin-top: 5%;
         margin-bottom: 5%;
     }
+
+    .projets {
+        flex-wrap: wrap;
+    }
+}
+/********************************/
+/*      FIN PAGE ACCUEIL        */
+
+/*      PAGE PROJETS            */
+
+.projets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.projets > article {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.blocprojets {
+    width:  100%;
+    height: 20vh;
+    background-color: yellow;
 }
