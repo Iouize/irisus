@@ -38,26 +38,19 @@ img {
 }
 
 /********************************/
-/*       PAGE D'ACCUEIL         */
+/*       PAGE CONTACT         */
 /*************MAIN************/
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*flex-wrap: wrap;*/
-    justify-content: space-between;
-}
 
-.contenu {
+.contenu-contact {
     margin-top: 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     /*flex-wrap: wrap;*/
 }
 
 
-section {
+.contenu-contact > section {
     width: 40%;
 }
 
@@ -138,11 +131,44 @@ select {
     background: url(../img/angle-down-solid.svg) no-repeat right;
 }
 
+/*      FIN PAGE CONTACT       */
+
+/********************************/
+
+/*      PAGE PROJETS            */
+
+.projets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.projets > article {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+  
+.blocprojets {
+    width:  100%;
+    height: 20vh;
+    margin-bottom: 2%;
+    background-color: yellow;
+}
+
+.blocprojets > img {
+    height: 100%;
+}
+
+
 /*************************/
 /* Pour tous les écrans plus petits qu'une tablette (768px)*/
 
 @media (max-width: 767.98px) {
-    section {
+    .contenu-contact > section {
         width: 90%;
         margin-top: 10%;
         margin-bottom: 10%;
@@ -160,7 +186,7 @@ select {
         width: 100%;
     }
 
-    main, .contenu, .informations {
+    main, .contenu-contact, .informations {
         flex-wrap: wrap;
     }
 
@@ -176,29 +202,13 @@ select {
 
     .projets {
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
-}
-/********************************/
-/*      FIN PAGE ACCUEIL        */
 
-/*      PAGE PROJETS            */
-
-.projets {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%;
-}
-
-.projets > article {
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-}
-
-.blocprojets {
-    width:  100%;
-    height: 20vh;
-    background-color: yellow;
+    .projets > article {
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }
