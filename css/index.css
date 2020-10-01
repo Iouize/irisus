@@ -1,21 +1,55 @@
-main {
-    display: flex;
-    justify-content: flex-end;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin';
+    letter-spacing: .2rem;
 }
 
-section {
+body {
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+header, footer {
+    height: 10vh;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.carre {
+    width: 8vh;
+    height: 8vh;
+    background-color: blueviolet;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 2;
+}
+
+
 .yeux {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: blanchedalmond;
+    width: 100vw;
 }
+
 .oeil {
-    width: 33.33vh;
-    height: 33.33vh;
+    width: 33.33vw;
+    height: 33.33vw;
     background-color: yellow;
 }
 
@@ -26,6 +60,51 @@ section {
     width: 100%;
 }
 
-.vide {
-    background-color: transparent;
+.decouvrir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Responsive */
+
+/* Appareils taille large, desktops (992 px et plus ) */
+
+@media (min-width: 992px) {
+
+    .yeux {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        height: 100vh;
+        align-items: flex-end;
+    }
+
+    .oeil {
+        width: 33.33vh;
+        height: 33.33vh;
+    }
+
+    .deuxyeux {
+        justify-content: flex-end;
+    }
+
+    .seul {
+        margin-right: 33.33vh;
+    }
+
+    main {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .deuxyeux :last-child {
+        margin-left: 33.33vh;
+    }
+
+    header, footer {
+        padding-left: 16vh;
+        padding-right: 16vh;
+    }
 }
